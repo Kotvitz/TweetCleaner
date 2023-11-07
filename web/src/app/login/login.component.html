@@ -1,0 +1,27 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Sign in to your Twitter Account</h2>
+    
+    <div class="google-login">
+      <button id="g_id_onload" data-client_id="YOUR_CLIENT_ID" data-login_uri="YOUR_LOGIN_REDIRECT_URI" data-callback="handleSignIn">
+        <span class="google-logo"></span> Sign in with Google
+      </button>
+    </div>
+
+    <div class="divider">
+      <span>Or</span>
+    </div>
+
+    <form (ngSubmit)="loginWithTwitterCredentials()">
+      <div class="form-group">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Sign in</button>
+    </form>
+
+    <a class="forgot-password" href="#">Forgot your password?</a>
+  </div>
+</div>
